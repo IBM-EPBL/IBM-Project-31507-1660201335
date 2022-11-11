@@ -1,0 +1,146 @@
+/*This is the stylesheet for index.html*/
+/*import google font poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.instruction{
+    /* It is used to style content in the container. */
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 10%;
+
+}
+
+.con-body{
+/* It used to style container in the body portion*/
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 90px 0;
+}
+
+.instruction h1{
+    /*It is used to style the word "instruction." */
+    font-size: 54px;
+}
+.instruction p{
+    /*It styles the paragraph content present on the page.*/
+    font-size: 20px;
+    color:black;
+    font-weight: 100;
+    margin: 30px;
+
+}
+button{
+    /* Style the next button */
+    height: 40px;
+    width: 140px;
+    border: 0;
+    padding: none;
+    color: #fff;
+    background: linear-gradient(to right,#fb5283,#ff3527);
+    border-radius: 6px;
+   transition: width 0.5s;
+}
+
+button img{
+    /*set the image for button*/
+    width: 40px;
+    display: none;
+}
+
+
+button:hover img{
+        display: block;
+}
+
+button:hover{
+    /*while clicking, set hover for the next button */
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.instruction::after{
+    /*Style for the leftmost vertical line*/
+    content: '';
+    width: 10px;
+    height: 80%;
+    background: linear-gradient(#fb5283,#ff3527);
+    position: absolute;
+    left:  -40px;
+    top: 20px;
+}
+.con-2i{
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items:flex-end;
+    margin: 40px;
+   
+}
+.con-2i .num_img{
+    height: 60%;
+    width: 80%;
+   
+
+}
+
+.color-box{
+    /*This code is used to create a green-colored box like structure.*/
+    position: absolute;
+    right: 45%;
+    top: 10px;
+     background: linear-gradient(#1dc280,#3b9cb7);
+     border-radius: 10px 10px 10px 10px;
+     height: 300px;
+     width: 80%;
+     z-index: -1;
+     transform: translateX(200px);
+    }
+
+    #home{
+
+        /*Style for the background image
+        Set the width,height, background-size, and background-position of the image.
+        */
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*linear-gradient-progressive transition between two or more colours in a straight line*/
+        background: linear-gradient(rgba(82, 208, 240, 0.1),rgba(151, 16, 128, 0.1)),url('/static/image/background_image.jpeg');
+        background-size: cover;
+        background-position: center;
+        
+       
+    }
+
+    #home h1{
+
+    /* Style the title of the project
+    Set the font size of the text as 70px.
+    Align the text to the center.
+    Set the text colour as white.
+    Set the spacing between letters to 2px.
+    Set the text shadow as white up to 6px.
+    */
+    font-size: 70px;    
+    text-align: center; 
+    color: white;     
+    letter-spacing: 2px;    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0px 1px 0px #FFFFFF,
+                 0px 2px 0px #FFFFFF,
+                 0px 3px 0px #FFFFFF,
+                 0px 4px 0px #FFFFFF,
+                 0px 5px 0px #FFFFFF,
+                 0px 6px 0px #FFFFFF;
+                 
+
+}
